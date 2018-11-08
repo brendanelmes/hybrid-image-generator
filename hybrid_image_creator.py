@@ -6,7 +6,7 @@ import math
 # Convolve a 2D kernel with an input image
 def convolution(kernel, input_image, kernel_size):
 
-    # Create new black image of same dimensions as input image to give black border
+    # Create new black image with dimensions of input image to give black border
     new_image = numpy.zeros_like(input_image)
 
     # Receive image and kernel dimensions
