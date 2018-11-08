@@ -26,9 +26,11 @@ def convolution(kernel, input_image, kernel_size):
             for i in range(0, template_rows-1):
                 for j in range(0, template_cols-1):
 
-                    # Compute cumulative sum of pixel value * corresponding kernel weighting
-                    pixel_sum = pixel_sum + (input_image[x + i - temp_row_half - 1][y + j - temp_col_half - 1]
-                                                    * kernel[j-1][i-1])
+                    # Compute cumulative sum of pixel value multiplied by
+                    # corresponding kernel weighting
+                    pixel_sum = pixel_sum + \
+                                (input_image[x + i - temp_row_half - 1]
+                                 [y + j - temp_col_half - 1] * kernel[j-1][i-1])
 
             # Set pixel value to new value
             new_image[x][y] = pixel_sum
