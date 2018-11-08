@@ -75,15 +75,17 @@ def low_pass_filter(input_image, sigma):
 
 def create_hybrid_images(image1, image2, sigma_value):
 
-    # Apply low-pass filter to each image according to cutoff values
+    # Apply low-pass filter to each image using cutoff values
     lpf_image1 = low_pass_filter(image1, sigma_value)
     lpf_image2 = low_pass_filter(image2, sigma_value)
 
-    # Subtract low-pass filtered images from originals to get high-pass filtered images
+    # Subtract low-pass filtered images from originals to get
+    #  high-pass filtered images
     hpf_image1 = image1 - lpf_image1
     hpf_image2 = image2 - lpf_image2
 
-    # Add low-pass filtered image from each image to the high-pass filtered image of the other
+    # Add low-pass filtered image from each image
+    # to the high-pass filtered image of the other
     hybrid_image_1 = lpf_image1 + hpf_image2
     hybrid_image2 = lpf_image2 + hpf_image1
 
