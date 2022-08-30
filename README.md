@@ -1,5 +1,5 @@
-# computer_vision_first_coursework
-Produces a hybrid image when given two images as inputs. The idea is that when viewed close-up, the image should look more similar to the first, but further away, more similar to the second. Produced image can be tuned by setting sigma value and image paths at the bottom of the code below the function definitions.
+# Hybrid image generator
+Python script which produces a hybrid image when given two images as inputs. The idea is that when viewed close-up, the image should look more similar to the first, but further away, more similar to the second. Produced image can be tuned by setting sigma value and image paths at the bottom of the code below the function definitions.
 
 ## System requirements
 To run this program locally you need:
