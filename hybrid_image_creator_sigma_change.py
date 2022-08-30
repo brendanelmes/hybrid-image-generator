@@ -96,8 +96,8 @@ cutoff1 = 1
 cutoff2 = 1
 
 # Import two images and resize the second to the size of the first
-photo1 = cv2.imread('volleyball.jpg')
-photo2_before_resize = cv2.imread('basketball.jpeg')
+photo1 = cv2.imread('source-images/volleyball.jpg')
+photo2_before_resize = cv2.imread('source-images/basketball.jpeg')
 width1, height1, unused_var = photo1.shape
 photo2 = cv2.resize(photo2_before_resize, (width1, height1))
 

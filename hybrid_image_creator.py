@@ -95,8 +95,8 @@ def create_hybrid_images(image1, image2, sigma_value):
 sigma_sigma = 2
 
 # Import two images and resize the second to the size of the first
-photo1 = cv2.imread('volleyball.jpg')
-photo2_before_resize = cv2.imread('basketball.jpeg')
+photo1 = cv2.imread('source-images/volleyball.jpg')
+photo2_before_resize = cv2.imread('source-images/basketball.jpeg')
 photo2 = cv2.resize(photo2_before_resize, (500, 500))
 
 # Generate the hybrid images
